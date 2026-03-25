@@ -3,3 +3,10 @@ def names():
     minúsculas, título, mayúsculas y con tabulador.
     """
     pass
+    nombre = input("Ingrese nombre: ")
+    apellido = input("Ingrese apellido: ")
+    nombre_completo = nombre + " " + apellido
+    print(nombre_completo.lower())
+    print(nombre_completo.title())
+    print(nombre_completo.upper())
+    print("\t" + nombre_completo.lower())
