@@ -3,15 +3,13 @@ def rectangle():
     el área y el perímetro.
     """
     pass
-    base = int(input("Ingrese la base: "))
-    altura = int(input("Ingrese la altura: "))
+    base = int(input("Base: "))
+    altura = int(input("Altura: "))
 
     area = base * altura
     perimetro = (2 * base) + (2 * altura)
-    print(area)
-    print(perimetro)
 
-    area = base * altura
-    perimetro = (2 * base) + (2 * altura)
-    print(area)
-    print(perimetro)
+    print(f"Base: {base}")
+    print(f"Altura: {altura}")
+    print(f"Area: {area}")
+    print(f"Perimetro: {perimetro}")
