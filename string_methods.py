@@ -8,27 +8,24 @@ def string_methods():
     multilinea = """Linea 1
     Linea 2
     Linea 3"""
-    print(nombre.strip())
-    print(nombre.lstrip())
-    print(nombre.rstrip())
+    print("Strip:", nombre.strip())
+    print("Lstrip:", nombre.lstrip())
+    print("Rstrip:", nombre.rstrip())
 
-    print(frase.upper())
-    print(frase.lower())
-    print(frase.title())
+    print("Upper:", frase.upper())
+    print("Lower:", frase.lower())
+    print("Title:", frase.title())
 
-    print(frase.find("gran"))
-    print(frase.replace("programacion", "desarrollo"))
+    print("Find:", frase.find("gran"))
+    print("Replace:", frase.replace("programacion", "desarrollo"))
 
-    print(frase.count("a"))
-    print("Python" in frase)
-    print("Java" in frase)
+    print("Count:", frase.count("a"))
+    print("Contiene Python:", "Python" in frase)
+    print("Contiene Java:", "Java" in frase)
 
-    print(frase[0:6])
-    print(frase[0:6:2])
-    print(frase[0:6][::-1])
-
-    nombre_sin_espacios = nombre.strip()
-    python = frase[0:6]
-    print(f"{nombre_sin_espacios} trabaja con {python}")
+    print("Slice:", frase[0:6])
+    print("Paso:", frase[0:6:2])
+    print("Reverso:", frase[0:6][::-1])
+    print("Formato:", f"{nombre.strip()} sabe Python")
 
     print(multilinea)
