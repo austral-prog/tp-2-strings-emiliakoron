@@ -4,8 +4,8 @@ def change():
     """
     pass
     
-    gasto = input("Ingrese el gasto: ")
-    dinero_recibido = input("Ingrese el dinero recibido: ")
+    gasto = input()
+    dinero_recibido = input()
 
     gasto = float(gasto)
     dinero_recibido = float(dinero_recibido)
