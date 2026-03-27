@@ -8,24 +8,24 @@ def string_methods():
     multilinea = """Linea 1
     Linea 2
     Linea 3"""
-    print("Strip:", nombre.strip())
-    print("Lstrip:", nombre.lstrip())
-    print("Rstrip:", nombre.rstrip())
+    print(f"Strip: {nombre.strip()}")
+    print(f"Lstrip: {nombre.lstrip()}")
+    print(f"Rstrip: {nombre.rstrip()}")
 
-    print("Upper:", frase.upper())
-    print("Lower:", frase.lower())
-    print("Title:", frase.title())
+    print(f"Upper: {frase.upper()}")
+    print(f"Lower: {frase.lower()}")
+    print(f"Title: {frase.title()}")
 
-    print("Find:", frase.find("gran"))
-    print("Replace:", frase.replace("programacion", "desarrollo"))
+    print(f"Find: {frase.find('gran')}")
+    print(f"Replace: {frase.replace('programacion', 'desarrollo')}")
 
-    print("Count:", frase.count("a"))
-    print("Contiene Python:", "Python" in frase)
-    print("Contiene Java:", "Java" in frase)
+    print(f"Count: {frase.count('a')}")
+    print(f"Contiene Python: {'Python' in frase}")
+    print(f"Contiene Java: {'Java' in frase}")
 
-    print("Slice:", frase[0:6])
-    print("Paso:", frase[0:6:2])
-    print("Reverso:", frase[0:6][::-1])
-    print("Formato:", f"{nombre.strip()} sabe Python")
+    print(f"Slice: {frase[0:6]}")  # Python
+    print(f"Paso: {frase[0:6:2]}")  # Pto
+    print(f"Reverso: {frase[0:6][::-1]}")  # nohtyP
+    print(f"Formato: {nombre.strip()} sabe Python")
 
     print(multilinea)
