@@ -4,7 +4,7 @@ def casting():
     
     precio = input()
     descuento = input()
-    cantidad = input ()
+    cantidad = input()
 
     precio = float(precio)
     descuento = float(descuento)
