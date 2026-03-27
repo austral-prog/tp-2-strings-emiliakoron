@@ -31,53 +31,65 @@ def ficha():
     nota2 = input()
     nota3 = input()
 
-    #encabezado decorativo
+    # decorativo
     print("=" * 24)
     print("    FICHA DEL ALUMNO")
     print("=" * 24)
 
+    # Nombre limpio
     nombre_limpio = nombre_completo.strip().title()
-    print("Nombre: ", nombre_limpio)
+    print(f"Nombre: {nombre_limpio}")
 
+    # Email en minúsculas
     email_limpio = email.strip().lower()
-    print("Email: ", email_limpio)
+    print(f"Email: {email_limpio}")
 
+    # Cantidad de caracteres
     cantidad = len(nombre_limpio)
-    print("Caracteres en nombre: ", cantidad)
+    print(f"Caracteres en nombre: {cantidad}")
 
+    # Iniciales
     pos_espacio = nombre_limpio.find(" ")
-    iniciales = nombre_limpio[0] + nombre_limpio[pos_espacio + 1 ]
-    print("Iniciales: ", iniciales)
+    iniciales = nombre_limpio[0] + nombre_limpio[pos_espacio + 1]
+    print(f"Iniciales: {iniciales}")
 
-    nombre_en_partes = nombre_limpio.split()
-    usuario = f"{nombre_en_partes[-1].lower()}.{nombre_en_partes[0].lower()}"
-    print("Usuario: ", usuario)
+    # Usuario apellido.nombre
+    partes = nombre_limpio.split()
+    usuario = f"{partes[-1].lower()}.{partes[0].lower()}"
+    print(f"Usuario: {usuario}")
 
-    print("Email valido: ", "@" in email_limpio)
+    # Email contiene @
+    print(f"Email valido: {'@' in email_limpio}")
 
+    # Dominio del email
     dominio = email_limpio[email_limpio.find("@") + 1:]
-    print("Dominio: ", dominio)
+    print(f"Dominio: {dominio}")
 
+    # Nombre para archivo
     nombre_guion = nombre_limpio.replace(" ", "_")
-    print("Nombre para archivo: ", nombre_guion)
+    print(f"Nombre para archivo: {nombre_guion}")
 
-    print("Cantidad de a: ", nombre_limpio.count("a"))
+    # Contar 'a'
+    print(f"Cantidad de a: {nombre_limpio.count('a')}")
 
-    print("Codigo secreto: ", nombre_limpio[::-1].upper())
+    # Código secreto
+    print(f"Codigo secreto: {nombre_limpio[::-1].upper()}")
 
-    n1 = float(nota1)
-    n2 = float(nota2)
-    n3 = float(nota3)
+    # Notas y cálculos
+    n1 = int(nota1)
+    n2 = int(nota2)
+    n3 = int(nota3)
 
     suma = n1 + n2 + n3
     promedio = suma / 3
-    promedio_entero = suma // 3 
+    promedio_entero = suma // 3
 
-    print("Nota 1: ", n1)
-    print("Nota 2 ", n2)
-    print("Nota 3", n3)
-    print("Suma: ", suma)
-    print("Promedio: ", promedio)
-    print("Promedio_entero: ", promedio_entero)
+    print(f"Nota 1: {n1}")
+    print(f"Nota 2: {n2}")
+    print(f"Nota 3: {n3}")
+    print(f"Suma: {suma}")
+    print(f"Promedio: {promedio}")
+    print(f"Promedio entero: {int(promedio_entero)}")
 
-    print("="*24)
+    # Cierre decorativo
+    print("=" * 24)
