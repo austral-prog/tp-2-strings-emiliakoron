@@ -33,7 +33,7 @@ def ficha():
 
     #encabezado decorativo
     print("=" * 24)
-    print("FICHA DEL ALUMNO")
+    print("    FICHA DEL ALUMNO")
     print("=" * 24)
 
     nombre_limpio = nombre_completo.strip().title()
@@ -71,7 +71,7 @@ def ficha():
 
     suma = n1 + n2 + n3
     promedio = suma / 3
-    promedio_entero = int(promedio)
+    promedio_entero = suma // 3 
 
     print("Nota 1: ", n1)
     print("Nota 2 ", n2)
