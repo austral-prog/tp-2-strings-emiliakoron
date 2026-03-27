@@ -3,3 +3,10 @@ def check_vowels():
     sin distinguir mayúsculas de minúsculas.
     """
     pass
+    nombre = input()
+    nombre = nombre.lower()
+    print("a" in nombre)
+    print("e" in nombre)
+    print("i" in nombre)
+    print("o" in nombre)
+    print("u" in nombre)
